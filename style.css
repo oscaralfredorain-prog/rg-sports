@@ -1,0 +1,401 @@
+body {
+
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#070707;
+color:white;
+text-align:center;
+
+}
+
+
+
+header {
+
+background:#111;
+padding:25px 15px;
+position:sticky;
+top:0;
+z-index:10;
+
+}
+
+
+
+h1 {
+
+margin:0;
+color:#00d26a;
+font-size:42px;
+letter-spacing:3px;
+
+}
+
+
+
+nav {
+
+margin-top:20px;
+
+}
+
+
+
+nav a {
+
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+transition:.3s;
+
+}
+
+
+
+nav a:hover {
+
+color:#00d26a;
+
+}
+
+
+
+
+
+main {
+
+padding:25px 20px;
+
+}
+
+
+
+
+
+/* PORTADA */
+
+.hero {
+
+margin-bottom:40px;
+
+}
+
+
+
+.hero img {
+
+width:100%;
+height:520px;
+object-fit:cover;
+border-radius:30px;
+
+}
+
+
+
+
+
+/* BIENVENIDA */
+
+.bienvenida {
+
+background:#111;
+padding:40px 20px;
+border-radius:25px;
+margin-bottom:50px;
+
+}
+
+
+
+.bienvenida h2 {
+
+color:#00d26a;
+font-size:38px;
+
+}
+
+
+
+.bienvenida p {
+
+font-size:20px;
+color:#ddd;
+
+}
+
+
+
+
+
+button {
+
+background:#00d26a;
+color:#000;
+border:none;
+padding:15px 35px;
+border-radius:30px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+
+}
+
+
+
+button:hover {
+
+background:white;
+transform:scale(1.05);
+
+}
+
+
+
+
+
+/* CATALOGO */
+
+
+.temporada {
+
+margin-bottom:40px;
+
+}
+
+
+
+.temporada h2 {
+
+font-size:42px;
+color:#00d26a;
+
+}
+
+
+
+.temporada p {
+
+font-size:20px;
+color:#ccc;
+
+}
+
+
+
+
+
+/* PRODUCTOS */
+
+
+.productos {
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:35px;
+
+}
+
+
+
+
+
+.camiseta {
+
+background:#151515;
+width:280px;
+padding:25px;
+border-radius:25px;
+border:1px solid #333;
+position:relative;
+transition:.3s;
+
+}
+
+
+
+.camiseta:hover {
+
+transform:translateY(-12px);
+
+border-color:#00d26a;
+
+}
+
+
+
+
+
+.camiseta::before {
+
+content:"🔥 NUEVO";
+
+position:absolute;
+top:15px;
+left:15px;
+
+background:#00d26a;
+color:black;
+
+font-size:12px;
+font-weight:bold;
+
+padding:7px 12px;
+border-radius:20px;
+
+}
+
+
+
+
+
+.camiseta img {
+
+width:100%;
+height:310px;
+object-fit:contain;
+margin-top:15px;
+
+}
+
+
+
+
+
+.camiseta h3 {
+
+color:#00d26a;
+font-size:23px;
+
+}
+
+
+
+
+
+.camiseta p {
+
+color:#ddd;
+line-height:1.5;
+
+}
+
+
+
+
+
+strong {
+
+font-size:26px;
+color:white;
+
+}
+
+
+
+
+
+/* INFORMACION FINAL */
+
+
+.info {
+
+margin-top:70px;
+background:#111;
+padding:35px;
+border-radius:25px;
+
+}
+
+
+
+.info h2 {
+
+color:#00d26a;
+
+}
+
+
+
+.info p {
+
+color:#ccc;
+font-size:18px;
+
+}
+
+
+
+
+
+footer {
+
+margin-top:40px;
+padding:20px;
+color:#777;
+
+}
+
+
+
+
+
+/* CELULAR */
+
+
+@media(max-width:600px){
+
+
+h1 {
+
+font-size:32px;
+
+}
+
+
+
+nav a {
+
+display:block;
+margin:15px;
+
+}
+
+
+
+.hero img {
+
+height:350px;
+
+}
+
+
+
+.bienvenida h2 {
+
+font-size:30px;
+
+}
+
+
+
+.temporada h2 {
+
+font-size:32px;
+
+}
+
+
+
+.camiseta {
+
+width:90%;
+
+}
+
+
+
+}
