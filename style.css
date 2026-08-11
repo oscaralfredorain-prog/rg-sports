@@ -343,15 +343,31 @@ color:#777;
 
 
 
-/* CELULAR */
-
+/* VERSION CELULAR */
 
 @media(max-width:600px){
 
 
+body {
+
+overflow-x:hidden;
+
+}
+
+
+
+header {
+
+padding:20px 10px;
+
+}
+
+
+
 h1 {
 
-font-size:32px;
+font-size:30px;
+letter-spacing:2px;
 
 }
 
@@ -359,8 +375,25 @@ font-size:32px;
 
 nav a {
 
-display:block;
-margin:15px;
+display:inline-block;
+margin:8px;
+font-size:14px;
+
+}
+
+
+
+main {
+
+padding:15px 10px;
+
+}
+
+
+
+.hero {
+
+margin-bottom:25px;
 
 }
 
@@ -368,7 +401,19 @@ margin:15px;
 
 .hero img {
 
-height:350px;
+height:250px;
+border-radius:20px;
+
+}
+
+
+
+
+
+.bienvenida {
+
+padding:25px 15px;
+margin-bottom:30px;
 
 }
 
@@ -376,7 +421,33 @@ height:350px;
 
 .bienvenida h2 {
 
-font-size:30px;
+font-size:28px;
+
+}
+
+
+
+.bienvenida p {
+
+font-size:17px;
+
+}
+
+
+
+button {
+
+padding:13px 25px;
+
+}
+
+
+
+
+
+.temporada {
+
+margin-bottom:30px;
 
 }
 
@@ -384,7 +455,25 @@ font-size:30px;
 
 .temporada h2 {
 
-font-size:32px;
+font-size:30px;
+
+}
+
+
+
+.temporada p {
+
+font-size:16px;
+
+}
+
+
+
+
+
+.productos {
+
+gap:20px;
 
 }
 
@@ -392,7 +481,51 @@ font-size:32px;
 
 .camiseta {
 
-width:90%;
+width:85%;
+padding:20px;
+
+}
+
+
+
+.camiseta img {
+
+height:260px;
+
+}
+
+
+
+.camiseta h3 {
+
+font-size:21px;
+
+}
+
+
+
+.camiseta p {
+
+font-size:16px;
+
+}
+
+
+
+strong {
+
+font-size:23px;
+
+}
+
+
+
+
+
+.info {
+
+margin-top:40px;
+padding:25px 15px;
 
 }
 
