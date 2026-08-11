@@ -1,34 +1,46 @@
-body {
+*{
+box-sizing:border-box;
+}
+
+
+body{
 
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
-background:#070707;
+background:#050505;
 color:white;
 text-align:center;
 
 }
 
 
-header {
+
+
+
+/* HEADER */
+
+header{
 
 background:#111;
-padding:25px 15px;
+padding:25px 20px;
 
 }
 
 
-h1 {
 
-margin:0;
+.logo{
+
+font-size:38px;
+font-weight:900;
 color:#00d26a;
-font-size:40px;
-letter-spacing:2px;
+letter-spacing:3px;
 
 }
 
 
 
-nav {
+
+nav{
 
 margin-top:20px;
 
@@ -36,18 +48,19 @@ margin-top:20px;
 
 
 
-nav a {
+nav a{
 
 color:white;
 text-decoration:none;
 margin:0 12px;
 font-weight:bold;
+font-size:15px;
 
 }
 
 
 
-nav a:hover {
+nav a:hover{
 
 color:#00d26a;
 
@@ -56,32 +69,38 @@ color:#00d26a;
 
 
 
-main {
-
-padding:30px 20px;
-
-}
 
 
 
 
 /* PORTADA */
 
-.hero {
 
-margin-bottom:40px;
+.hero{
+
+width:100%;
+max-width:1300px;
+margin:auto;
 
 }
 
 
 
-.hero img {
+.hero img{
 
 width:100%;
 height:auto;
-max-height:500px;
+max-height:600px;
 object-fit:contain;
-border-radius:25px;
+display:block;
+
+}
+
+
+
+.hero-contenido{
+
+display:none;
 
 }
 
@@ -89,20 +108,21 @@ border-radius:25px;
 
 
 
-/* PRESENTACION */
 
-.bienvenida {
 
-background:#151515;
+
+/* SECCIONES */
+
+
+section{
+
 padding:35px 20px;
-border-radius:25px;
-margin-bottom:45px;
 
 }
 
 
 
-.bienvenida h2 {
+section h2{
 
 color:#00d26a;
 font-size:38px;
@@ -111,50 +131,60 @@ font-size:38px;
 
 
 
-.bienvenida p {
 
-color:#ddd;
-font-size:20px;
+
+
+
+
+/* MAS VENDIDOS */
+
+
+.mini{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+
+
+.mini a{
+
+text-decoration:none;
+
+}
+
+
+
+.mini button{
+
+width:auto;
+padding:15px 30px;
 
 }
 
 
 
 
-button {
-
-background:#00d26a;
-color:#000;
-border:none;
-padding:14px 30px;
-border-radius:30px;
-font-weight:bold;
-cursor:pointer;
-
-}
 
 
 
 
+/* LIGAS */
 
-/* TITULO CATALOGO */
 
-
-.temporada h2 {
+.liga{
 
 color:#00d26a;
-font-size:40px;
+font-size:28px;
+margin-top:45px;
 
 }
 
 
 
-.temporada p {
-
-color:#ccc;
-font-size:18px;
-
-}
 
 
 
@@ -163,11 +193,11 @@ font-size:18px;
 /* PRODUCTOS */
 
 
-.productos {
+.productos{
 
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
+flex-wrap:wrap;
 gap:25px;
 
 }
@@ -175,28 +205,31 @@ gap:25px;
 
 
 
+.camiseta{
 
-.camiseta {
-
-background:#151515;
+background:#111;
 width:280px;
 padding:20px;
-border-radius:20px;
+border-radius:25px;
 border:1px solid #333;
+transition:.3s;
 
 }
 
 
 
-.camiseta:hover {
+.camiseta:hover{
 
+transform:translateY(-8px);
 border-color:#00d26a;
 
 }
 
 
 
-.camiseta img {
+
+
+.camiseta img{
 
 width:100%;
 height:300px;
@@ -206,24 +239,27 @@ object-fit:contain;
 
 
 
-.camiseta h3 {
+
+.camiseta h3{
 
 color:#00d26a;
-font-size:22px;
+font-size:21px;
 
 }
 
 
 
-.camiseta p {
 
-color:#ddd;
+.camiseta p{
+
+color:#ccc;
+line-height:1.5;
 
 }
 
 
 
-strong {
+strong{
 
 font-size:25px;
 
@@ -233,28 +269,81 @@ font-size:25px;
 
 
 
-.info {
 
-margin-top:60px;
+
+/* BOTONES */
+
+
+button{
+
+background:#00d26a;
+color:#000;
+border:none;
+padding:13px 30px;
+border-radius:25px;
+font-weight:bold;
+cursor:pointer;
+font-size:15px;
+
+}
+
+
+
+button:hover{
+
+background:white;
+
+}
+
+
+
+
+
+
+
+
+/* BLOQUES FUTUROS */
+
+
+.bloque{
+
 background:#111;
+max-width:900px;
+margin:50px auto;
+border-radius:25px;
+padding:35px;
+
+}
+
+
+
+
+
+.confianza{
+
+background:#111;
+margin-top:50px;
+padding:40px;
+
+}
+
+
+
+.confianza p{
+
+font-size:20px;
+
+}
+
+
+
+
+
+
+
+footer{
+
 padding:30px;
-border-radius:20px;
-
-}
-
-
-
-.info h2 {
-
-color:#00d26a;
-
-}
-
-
-
-footer {
-
-padding:20px;
 color:#777;
 
 }
@@ -263,19 +352,18 @@ color:#777;
 
 
 
+
+
+
+
 /* CELULAR */
 
-@media(max-width:600px){
+
+@media(max-width:700px){
 
 
-header {
 
-padding:15px 5px;
-
-}
-
-
-h1 {
+.logo{
 
 font-size:28px;
 
@@ -283,20 +371,12 @@ font-size:28px;
 
 
 
-nav {
 
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
+nav a{
 
-}
-
-
-
-nav a {
-
+display:inline-block;
 font-size:13px;
-margin:6px;
+margin:7px;
 
 }
 
@@ -304,25 +384,10 @@ margin:6px;
 
 
 
-main {
 
-padding:10px;
+.hero img{
 
-}
-
-
-
-
-
-/* PORTADA SIN CORTAR */
-
-.hero img {
-
-width:100%;
-height:auto;
-max-height:250px;
-object-fit:contain;
-border-radius:18px;
+max-height:280px;
 
 }
 
@@ -330,33 +395,8 @@ border-radius:18px;
 
 
 
-.bienvenida {
 
-padding:20px 10px;
-
-}
-
-
-
-.bienvenida h2 {
-
-font-size:25px;
-
-}
-
-
-
-.bienvenida p {
-
-font-size:16px;
-
-}
-
-
-
-
-
-.temporada h2 {
+section h2{
 
 font-size:28px;
 
@@ -366,9 +406,8 @@ font-size:28px;
 
 
 
-/* CAMISETAS 2 COLUMNAS */
 
-.productos {
+.productos{
 
 display:grid;
 grid-template-columns:repeat(2,1fr);
@@ -378,17 +417,19 @@ gap:12px;
 
 
 
-.camiseta {
+
+.camiseta{
 
 width:auto;
 padding:12px;
-border-radius:15px;
 
 }
 
 
 
-.camiseta img {
+
+
+.camiseta img{
 
 height:150px;
 
@@ -396,7 +437,9 @@ height:150px;
 
 
 
-.camiseta h3 {
+
+
+.camiseta h3{
 
 font-size:14px;
 
@@ -404,17 +447,17 @@ font-size:14px;
 
 
 
-.camiseta p {
+
+.camiseta p{
 
 font-size:12px;
-
-line-height:1.3;
 
 }
 
 
 
-strong {
+
+strong{
 
 font-size:18px;
 
@@ -422,23 +465,14 @@ font-size:18px;
 
 
 
-button {
 
-width:100%;
-padding:10px 5px;
-font-size:13px;
+button{
 
-}
-
-
-
-
-
-.info {
-
-padding:20px 10px;
+padding:10px;
+font-size:12px;
 
 }
+
 
 
 }
