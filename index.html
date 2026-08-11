@@ -4,38 +4,80 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RG Sports ⚽</title>
+<title>
+RG Sports ⚽
+</title>
+
 
 <link rel="stylesheet" href="style.css">
 
+
 </head>
+
 
 
 <body>
 
 
+
+
+
 <header>
 
+
 <div class="logo">
+
 RG SPORTS ⚽
+
 </div>
+
 
 
 <nav>
 
-<a href="#inicio">Inicio</a>
-<a href="#clubes">Clubes</a>
-<a href="#selecciones">Selecciones</a>
-<a href="#retro">Retro</a>
-<a href="#otros">Otros</a>
 
-<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
-Instagram
+<a href="#inicio">
+Inicio
 </a>
 
+
+<a href="#destacados">
+Más vendidos
+</a>
+
+
+<a href="#clubes">
+Clubes
+</a>
+
+
+<a href="#selecciones">
+Selecciones
+</a>
+
+
+<a href="#retro">
+Retro
+</a>
+
+
+<a href="#otros">
+Otros
+</a>
+
+
+<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
+Instagram
+
+</a>
+
+
 </nav>
+
 
 </header>
 
@@ -43,9 +85,13 @@ Instagram
 
 
 
+
+
 <section class="hero" id="inicio">
 
+
 <img src="imagenes/portada.png" alt="RG Sports">
+
 
 </section>
 
@@ -56,38 +102,255 @@ Instagram
 
 
 
-<section class="destacados">
+<section class="presentacion">
+
+
+<h1>
+
+RG SPORTS ⚽
+
+</h1>
+
+
+<p>
+
+Camisetas de fútbol actuales y modelos retro.
+
+</p>
+
+
+<p>
+
+Consulta disponibilidad por Instagram.
+
+</p>
+
+
+
+<a href="#clubes">
+
+<button>
+
+VER CATÁLOGO
+
+</button>
+
+</a>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="destacados">
 
 
 <h2>
+
 🔥 Más vendidos
+
 </h2>
 
 
-<div class="mini">
+
+<div class="productos">
 
 
-<a href="#real">
+
+
+
+<div class="camiseta">
+
+
+<img src="imagenes/real-madrid.jpg">
+
+
+
+<span class="etiqueta">
+
+MÁS VENDIDA
+
+</span>
+
+
+
+<h3>
+
+Real Madrid
+
+<br>
+
+Local / Primera Equipación 26/27
+
+</h3>
+
+
+
+<p>
+
+📏 S - M - L - XL - XXL
+
+</p>
+
+
+
+<strong>
+
+$21.990
+
+</strong>
+
+
+
+<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-⭐ Real Madrid
+
+Consultar
+
 </button>
+
+
 </a>
 
 
+</div>
 
-<a href="#barcelona">
+
+
+
+
+
+
+
+<div class="camiseta">
+
+
+<img src="imagenes/barcelona.png">
+
+
+
+<span class="etiqueta">
+
+MÁS VENDIDA
+
+</span>
+
+
+
+<h3>
+
+FC Barcelona
+
+<br>
+
+Local / Primera Equipación 26/27
+
+</h3>
+
+
+
+<p>
+
+📏 S - M - L - XL - XXL
+
+</p>
+
+
+
+<strong>
+
+$21.990
+
+</strong>
+
+
+
+<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-⭐ Barcelona
+
+Consultar
+
 </button>
+
+
 </a>
 
 
+</div>
 
-<a href="#psg">
+
+
+
+
+
+
+
+<div class="camiseta">
+
+
+<img src="imagenes/psg.png">
+
+
+
+<span class="etiqueta">
+
+MÁS VENDIDA
+
+</span>
+
+
+
+<h3>
+
+Paris Saint-Germain
+
+<br>
+
+Local / Primera Equipación 26/27
+
+</h3>
+
+
+
+<p>
+
+📏 S - M - L - XL - XXL
+
+</p>
+
+
+
+<strong>
+
+$21.990
+
+</strong>
+
+
+
+<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-⭐ PSG
+
+Consultar
+
 </button>
+
+
 </a>
+
+
+</div>
+
+
 
 
 
@@ -95,7 +358,6 @@ Instagram
 
 
 </section>
-
 
 
 
@@ -108,17 +370,84 @@ Instagram
 
 
 <h2>
+
 🏟️ Clubes Temporada 26/27
+
 </h2>
 
 
 
+<div class="buscador">
+
+
+<input 
+type="text"
+id="buscar"
+placeholder="🔎 Buscar camiseta..."
+>
+
+
+</div>
 
 
 
+
+<div class="filtros">
+
+
+<button onclick="filtrar('todos')">
+
+Todos
+
+</button>
+
+
+
+<button onclick="filtrar('laliga')">
+
+🇪🇸 LaLiga
+
+</button>
+
+
+
+<button onclick="filtrar('premier')">
+
+🏴 Premier
+
+</button>
+
+
+
+<button onclick="filtrar('seriea')">
+
+🇮🇹 Serie A
+
+</button>
+
+
+
+<button onclick="filtrar('bundesliga')">
+
+🇩🇪 Bundesliga
+
+</button>
+
+
+
+<button onclick="filtrar('ligue1')">
+
+🇫🇷 Ligue 1
+
+</button>
+
+
+</div>
 
 <h3 class="liga">
+
 🇪🇸 LaLiga
+
 </h3>
 
 
@@ -127,32 +456,66 @@ Instagram
 
 
 
-<div class="camiseta" id="real">
+
+
+<div class="camiseta producto laliga">
 
 
 <img src="imagenes/real-madrid.jpg">
 
 
+<span class="etiqueta">
+
+LOCAL
+
+</span>
+
+
+
 <h3>
-Real Madrid Local 26/27
+
+Real Madrid
+
+<br>
+
+Primera Equipación 26/27
+
 </h3>
 
 
+
 <p>
-⭐ LaLiga<br>
-📏 S - M - L - XL
+
+⭐ LaLiga
+
+<br>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
 
+
 <strong>
+
 $21.990
+
 </strong>
 
 
+
 <a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-Consultar
+
+Consultar Real Madrid
+
 </button>
+
 </a>
 
 
@@ -164,36 +527,71 @@ Consultar
 
 
 
-<div class="camiseta" id="barcelona">
+
+
+<div class="camiseta producto laliga">
 
 
 <img src="imagenes/barcelona.png">
 
 
+<span class="etiqueta">
+
+LOCAL
+
+</span>
+
+
+
 <h3>
-FC Barcelona Local 26/27
+
+FC Barcelona
+
+<br>
+
+Primera Equipación 26/27
+
 </h3>
 
 
+
 <p>
-⭐ LaLiga<br>
-📏 S - M - L - XL
+
+⭐ LaLiga
+
+<br>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
 
+
 <strong>
+
 $21.990
+
 </strong>
 
 
+
 <a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-Consultar
+
+Consultar Barcelona
+
 </button>
+
 </a>
 
 
 </div>
+
 
 
 
@@ -209,9 +607,10 @@ Consultar
 
 
 <h3 class="liga">
-🏴 Premier League
-</h3>
 
+🏴 Premier League
+
+</h3>
 
 
 
@@ -219,32 +618,66 @@ Consultar
 
 
 
-<div class="camiseta">
+
+
+<div class="camiseta producto premier">
 
 
 <img src="imagenes/city.jpg">
 
 
+<span class="etiqueta">
+
+LOCAL
+
+</span>
+
+
+
 <h3>
-Manchester City 26/27
+
+Manchester City
+
+<br>
+
+Primera Equipación 26/27
+
 </h3>
 
 
+
 <p>
-⭐ Premier League<br>
-📏 S - M - L - XL
+
+⭐ Premier League
+
+<br>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
 
+
 <strong>
+
 $21.990
+
 </strong>
 
 
+
 <a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-Consultar
+
+Consultar Manchester City
+
 </button>
+
 </a>
 
 
@@ -255,36 +688,72 @@ Consultar
 
 
 
-<div class="camiseta">
+
+
+
+<div class="camiseta producto premier">
 
 
 <img src="imagenes/liverpool.png">
 
 
+<span class="etiqueta">
+
+LOCAL
+
+</span>
+
+
+
 <h3>
-Liverpool FC 26/27
+
+Liverpool FC
+
+<br>
+
+Primera Equipación 26/27
+
 </h3>
 
 
+
 <p>
-⭐ Premier League<br>
-📏 S - M - L - XL
+
+⭐ Premier League
+
+<br>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
 
+
 <strong>
+
 $21.990
+
 </strong>
 
 
+
 <a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-Consultar
+
+Consultar Liverpool
+
 </button>
+
 </a>
 
 
 </div>
+
 
 
 
@@ -299,8 +768,11 @@ Consultar
 
 
 <h3 class="liga">
+
 🇮🇹 Serie A
+
 </h3>
+
 
 
 
@@ -308,32 +780,66 @@ Consultar
 
 
 
-<div class="camiseta">
+
+
+<div class="camiseta producto seriea">
 
 
 <img src="imagenes/inter.png">
 
 
+<span class="etiqueta">
+
+LOCAL
+
+</span>
+
+
+
 <h3>
-Inter de Milán 26/27
+
+Inter de Milán
+
+<br>
+
+Primera Equipación 26/27
+
 </h3>
 
 
+
 <p>
-⭐ Serie A<br>
-📏 S - M - L - XL
+
+⭐ Serie A
+
+<br>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
 
+
 <strong>
+
 $21.990
+
 </strong>
 
 
+
 <a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-Consultar
+
+Consultar Inter
+
 </button>
+
 </a>
 
 
@@ -345,32 +851,66 @@ Consultar
 
 
 
-<div class="camiseta">
+
+
+<div class="camiseta producto seriea">
 
 
 <img src="imagenes/milan.png">
 
 
+<span class="etiqueta">
+
+LOCAL
+
+</span>
+
+
+
 <h3>
-AC Milan 26/27
+
+AC Milan
+
+<br>
+
+Primera Equipación 26/27
+
 </h3>
 
 
+
 <p>
-⭐ Serie A<br>
-📏 S - M - L - XL
+
+⭐ Serie A
+
+<br>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
 
+
 <strong>
+
 $21.990
+
 </strong>
 
 
+
 <a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-Consultar
+
+Consultar Milan
+
 </button>
+
 </a>
 
 
@@ -378,18 +918,13 @@ Consultar
 
 
 
+
 </div>
 
-
-
-
-
-
-
-
-
 <h3 class="liga">
+
 🇩🇪 Bundesliga
+
 </h3>
 
 
@@ -397,36 +932,72 @@ Consultar
 <div class="productos">
 
 
-<div class="camiseta">
+
+
+
+<div class="camiseta producto bundesliga">
 
 
 <img src="imagenes/bayern.png">
 
 
+<span class="etiqueta">
+
+LOCAL
+
+</span>
+
+
+
 <h3>
-Bayern Múnich 26/27
+
+Bayern Múnich
+
+<br>
+
+Primera Equipación 26/27
+
 </h3>
 
 
+
 <p>
-⭐ Bundesliga<br>
-📏 S - M - L - XL
+
+⭐ Bundesliga
+
+<br>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
 
+
 <strong>
+
 $21.990
+
 </strong>
 
 
+
 <a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-Consultar
+
+Consultar Bayern
+
 </button>
+
 </a>
 
 
 </div>
+
 
 
 </div>
@@ -440,7 +1011,9 @@ Consultar
 
 
 <h3 class="liga">
+
 🇫🇷 Ligue 1
+
 </h3>
 
 
@@ -448,45 +1021,75 @@ Consultar
 <div class="productos">
 
 
-<div class="camiseta" id="psg">
+
+
+
+<div class="camiseta producto ligue1">
 
 
 <img src="imagenes/psg.png">
 
 
+<span class="etiqueta">
+
+LOCAL
+
+</span>
+
+
+
 <h3>
-Paris Saint-Germain 26/27
+
+Paris Saint-Germain
+
+<br>
+
+Primera Equipación 26/27
+
 </h3>
 
 
+
 <p>
-⭐ Ligue 1<br>
-📏 S - M - L - XL
+
+⭐ Ligue 1
+
+<br>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
 
+
 <strong>
+
 $21.990
+
 </strong>
 
 
+
 <a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
 <button>
-Consultar
+
+Consultar PSG
+
 </button>
+
 </a>
 
 
 </div>
 
 
+
 </div>
-
-
-
-
-
-</section>
 
 
 
@@ -498,34 +1101,382 @@ Consultar
 
 <section class="bloque" id="selecciones">
 
+
 <h2>
+
 🌎 Selecciones
+
 </h2>
 
+
+
+<div class="productos">
+
+
+
+
+
+
+
+<div class="camiseta">
+
+
+<img src="imagenes/argentina.jpg">
+
+
+<span class="etiqueta">
+
+SELECCIÓN
+
+</span>
+
+
+
+<h3>
+
+Argentina 🇦🇷
+
+<br>
+
+Local
+
+</h3>
+
+
+
 <p>
-Próximamente camisetas de Argentina, Brasil, Francia y más.
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
+
+
+<strong>
+
+$21.990
+
+</strong>
+
+
+
+<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
+<button>
+
+Consultar
+
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="camiseta">
+
+
+<img src="imagenes/brasil.jpg">
+
+
+<span class="etiqueta">
+
+SELECCIÓN
+
+</span>
+
+
+
+<h3>
+
+Brasil 🇧🇷
+
+<br>
+
+Local
+
+</h3>
+
+
+
+<p>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
+</p>
+
+
+
+<strong>
+
+$21.990
+
+</strong>
+
+
+
+<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
+<button>
+
+Consultar
+
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="camiseta">
+
+
+<img src="imagenes/francia.jpg">
+
+
+<span class="etiqueta">
+
+SELECCIÓN
+
+</span>
+
+
+
+<h3>
+
+Francia 🇫🇷
+
+<br>
+
+Local
+
+</h3>
+
+
+
+<p>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
+</p>
+
+
+
+<strong>
+
+$21.990
+
+</strong>
+
+
+
+<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
+<button>
+
+Consultar
+
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="camiseta">
+
+
+<img src="imagenes/chile.jpg">
+
+
+<span class="etiqueta">
+
+SELECCIÓN
+
+</span>
+
+
+
+<h3>
+
+Chile 🇨🇱
+
+<br>
+
+Local
+
+</h3>
+
+
+
+<p>
+
+👕 Manga corta
+
+<br>
+
+📏 S - M - L - XL - XXL
+
+</p>
+
+
+
+<strong>
+
+$21.990
+
+</strong>
+
+
+
+<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
+<button>
+
+Consultar
+
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
 </section>
-
-
-
-
-
-
-
 
 <section class="bloque" id="retro">
 
+
 <h2>
+
 👕 Retro
+
 </h2>
 
+
+
+<div class="productos">
+
+
+
+
+
+
+
+<div class="camiseta">
+
+
+<img src="imagenes/retro.png">
+
+
+<span class="etiqueta">
+
+RETRO
+
+</span>
+
+
+
+<h3>
+
+FC Barcelona
+
+<br>
+
+Retro 1999
+
+</h3>
+
+
+
 <p>
-Camisetas clásicas e históricas.
+
+⭐ Modelo histórico
+
+<br>
+
+👕 Manga larga
+
+<br>
+
+📏 S - M - L - XL - XXL
+
 </p>
 
+
+
+<strong>
+
+$25.990
+
+</strong>
+
+
+
+<a href="https://www.instagram.com/RG_SPORTS__/" target="_blank">
+
+<button>
+
+Consultar Retro
+
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
 </section>
+
 
 
 
@@ -536,49 +1487,181 @@ Camisetas clásicas e históricas.
 
 <section class="bloque" id="otros">
 
+
 <h2>
+
 🖼️ Otros productos
+
 </h2>
 
+
+
+<div class="productos">
+
+
+
+
+
+<div class="camiseta">
+
+
+<h3>
+
+Cuadros deportivos
+
+</h3>
+
+
 <p>
-Cuadros metálicos, tazas y productos deportivos.
+
+Decoración futbolera para tu espacio.
+
 </p>
 
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="camiseta">
+
+
+<h3>
+
+Accesorios deportivos
+
+</h3>
+
+
+<p>
+
+Más productos próximamente.
+
+</p>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
 </section>
+<section class="quienes">
+
+
+<h2>
+
+⚽ Quiénes somos
+
+</h2>
 
 
 
+<p>
+
+RG Sports nace como un emprendimiento dedicado a los fanáticos del fútbol.
+
+</p>
 
 
 
+<p>
+
+Comenzamos este proyecto en 2021 con la idea de compartir nuestra pasión por las camisetas y la historia de los grandes equipos del mundo.
+
+</p>
 
 
 
+<p>
+
+Somos amantes del fútbol y buscamos entregar modelos actuales y camisetas retro para todos quienes viven este deporte con la misma pasión.
+
+</p>
+
+
+
+<p>
+
+Cada camiseta representa una historia, un club y un momento inolvidable dentro del fútbol.
+
+</p>
+
+
+
+<p>
+
+🔥 Gracias por apoyar este emprendimiento.
+
+</p>
+
+
+
+</section>
 <section class="confianza">
 
 
 <h2>
+
 ¿Por qué RG Sports?
+
 </h2>
 
 
+
 <p>
-⚽ Temporada actual 26/27
+
+⚽ Camisetas actuales y modelos retro
+
 </p>
 
 
+
 <p>
+
+📏 Tallas S - M - L - XL - XXL
+
+</p>
+
+
+
+<p>
+
 🔥 Equipos internacionales
+
 </p>
 
 
+
 <p>
-📲 Atención por Instagram
+
+📲 Atención directa por Instagram
+
+</p>
+
+
+
+<p>
+
+🚚 Consultas y envíos online
+
 </p>
 
 
 
 </section>
+
+
 
 
 
@@ -590,10 +1673,141 @@ Cuadros metálicos, tazas y productos deportivos.
 
 RG SPORTS ⚽ 2026
 
+<br>
+
+Catálogo de camisetas fútbol
+
 </footer>
 
 
 
+
+
+
+
+
+
+<script>
+
+
+const buscador = document.getElementById("buscar");
+
+
+
+if(buscador){
+
+
+buscador.addEventListener("keyup", function(){
+
+
+
+let texto = buscador.value.toLowerCase();
+
+
+
+let productos = document.querySelectorAll(".producto");
+
+
+
+productos.forEach(function(producto){
+
+
+
+let contenido = producto.innerText.toLowerCase();
+
+
+
+if(contenido.includes(texto)){
+
+
+producto.style.display="block";
+
+
+}
+
+else{
+
+
+producto.style.display="none";
+
+
+}
+
+
+});
+
+
+});
+
+
+}
+
+
+
+
+
+
+
+
+
+function filtrar(liga){
+
+
+
+let productos = document.querySelectorAll(".producto");
+
+
+
+productos.forEach(function(producto){
+
+
+
+if(liga === "todos"){
+
+
+producto.style.display="block";
+
+
+}
+
+
+else if(producto.classList.contains(liga)){
+
+
+producto.style.display="block";
+
+
+}
+
+
+else{
+
+
+producto.style.display="none";
+
+
+}
+
+
+
+});
+
+
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
 </body>
+
 
 </html>
