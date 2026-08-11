@@ -1,77 +1,54 @@
 *{
+margin:0;
+padding:0;
 box-sizing:border-box;
-}
-
-
-html{
-
-scroll-behavior:smooth;
-
+font-family:Arial, Helvetica, sans-serif;
 }
 
 
 
 body{
 
-margin:0;
-
-font-family:Arial, Helvetica, sans-serif;
-
 background:#050505;
-
 color:white;
-
-text-align:center;
 
 }
 
 
-
-
-
-/* HEADER */
 
 header{
 
-background:linear-gradient(180deg,#151515,#080808);
-
-padding:25px 20px;
-
+background:#111;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
 position:sticky;
-
 top:0;
-
-z-index:100;
-
-border-bottom:1px solid #222;
+z-index:1000;
 
 }
-
-
 
 
 
 .logo{
 
-font-size:40px;
-
+font-size:32px;
 font-weight:900;
-
-letter-spacing:4px;
-
-color:#00d26a;
-
-text-shadow:0 0 15px rgba(0,210,106,.5);
+letter-spacing:2px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color:#00ff66;
 
 }
 
 
 
-
-
 nav{
 
-margin-top:20px;
+display:flex;
+gap:18px;
+flex-wrap:wrap;
 
 }
 
@@ -80,15 +57,9 @@ margin-top:20px;
 nav a{
 
 color:white;
-
 text-decoration:none;
-
-margin:0 12px;
-
 font-weight:bold;
-
 font-size:15px;
-
 transition:.3s;
 
 }
@@ -97,7 +68,7 @@ transition:.3s;
 
 nav a:hover{
 
-color:#00d26a;
+color:#00ff66;
 
 }
 
@@ -105,17 +76,11 @@ color:#00d26a;
 
 
 
-/* PORTADA */
 
 
 .hero{
 
 width:100%;
-
-max-width:1400px;
-
-margin:auto;
-
 overflow:hidden;
 
 }
@@ -125,13 +90,7 @@ overflow:hidden;
 .hero img{
 
 width:100%;
-
 height:auto;
-
-max-height:650px;
-
-object-fit:contain;
-
 display:block;
 
 }
@@ -140,26 +99,671 @@ display:block;
 
 
 
-/* SECCIONES */
 
 
-section{
 
-padding:45px 20px;
+.presentacion{
+
+text-align:center;
+padding:50px 20px;
+background:#050505;
+color:white;
 
 }
 
 
 
-section h2{
+.presentacion h1{
 
 font-size:40px;
-
-color:#00d26a;
-
-margin-bottom:35px;
-
+margin-bottom:15px;
+color:#00ff66;
+font-weight:900;
+letter-spacing:3px;
 text-transform:uppercase;
+
+}
+
+
+
+.presentacion p{
+
+font-size:18px;
+margin:10px;
+
+}
+
+
+
+.presentacion button{
+
+background:#00a651;
+color:white;
+border:none;
+padding:15px 35px;
+font-size:18px;
+font-weight:bold;
+border-radius:8px;
+cursor:pointer;
+margin-top:20px;
+transition:.3s;
+
+}
+
+
+
+.presentacion button:hover{
+
+background:#007d3d;
+transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+h2{
+
+text-align:center;
+font-size:32px;
+margin:45px 0 25px;
+color:white;
+
+}
+
+
+
+.productos{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+padding:20px 50px;
+
+}
+
+
+
+
+
+
+
+.camiseta{
+
+background:#111;
+color:white;
+border-radius:15px;
+padding:20px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.5);
+position:relative;
+transition:.3s;
+
+}
+
+
+
+.camiseta:hover{
+
+transform:translateY(-10px);
+box-shadow:0 0 25px #00ff66;
+border:1px solid #00ff66;
+
+}
+
+
+
+
+
+.camiseta img{
+
+width:100%;
+height:300px;
+object-fit:contain;
+margin-bottom:15px;
+
+}
+.etiqueta{
+
+position:absolute;
+top:15px;
+left:15px;
+background:#00a651;
+color:white;
+padding:7px 12px;
+border-radius:20px;
+font-size:13px;
+font-weight:bold;
+
+}
+
+
+
+.camiseta h3{
+
+font-size:20px;
+margin:10px 0;
+
+}
+
+
+
+.camiseta p{
+
+color:#555;
+line-height:1.6;
+margin:10px 0;
+
+}
+
+
+
+.camiseta strong{
+
+display:block;
+font-size:25px;
+color:#00a651;
+margin:15px 0;
+
+}
+
+
+
+
+
+
+
+.camiseta button{
+
+background:#00ff66;
+color:#000;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+
+}
+
+
+
+.camiseta button:hover{
+
+background:#00a651;
+transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+
+.buscador{
+
+text-align:center;
+margin:25px;
+
+}
+
+
+
+.buscador input{
+
+width:80%;
+max-width:500px;
+padding:15px;
+border-radius:10px;
+border:2px solid #ddd;
+font-size:16px;
+
+}
+
+
+
+.filtros{
+
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+margin:25px;
+
+}
+
+
+
+.filtros button{
+
+background:#111;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+
+}
+
+
+
+.filtros button:hover{
+
+background:#00a651;
+
+}
+
+
+
+
+
+
+
+.liga{
+
+font-size:26px;
+margin:40px 50px 10px;
+border-left:6px solid #00a651;
+padding-left:15px;
+
+}
+
+
+
+
+
+
+
+.bloque,
+.quienes,
+.confianza{
+
+background:#050505;
+padding:40px 20px;
+margin-top:30px;
+
+}
+
+
+
+
+
+.quienes p,
+.confianza p{
+
+text-align:center;
+font-size:18px;
+line-height:1.7;
+max-width:900px;
+margin:15px auto;
+
+}
+
+
+
+
+
+
+
+footer{
+
+background:#111;
+color:white;
+text-align:center;
+padding:35px 20px;
+font-size:17px;
+margin-top:40px;
+
+}
+
+
+
+footer::first-line{
+
+color:#00ff66;
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+section{
+
+scroll-margin-top:90px;
+
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+
+
+header{
+
+flex-direction:column;
+padding:20px;
+
+}
+
+
+
+.logo{
+
+margin-bottom:15px;
+
+}
+
+
+
+nav{
+
+justify-content:center;
+
+}
+
+
+
+nav a{
+
+font-size:14px;
+
+}
+
+
+
+.productos{
+
+padding:15px;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+
+}
+
+
+
+.camiseta{
+
+padding:12px;
+
+}
+
+
+
+.camiseta img{
+
+height:220px;
+
+}
+
+
+
+.camiseta h3{
+
+font-size:16px;
+
+}
+
+
+
+.camiseta strong{
+
+font-size:21px;
+
+}
+
+
+
+.liga{
+
+margin-left:20px;
+font-size:22px;
+
+}
+
+
+
+.presentacion h1{
+
+font-size:32px;
+
+}
+
+
+}
+/* ==========================
+   DETALLES FINALES RG SPORTS
+========================== */
+
+
+
+img{
+
+max-width:100%;
+
+}
+
+
+
+
+.camiseta a{
+
+text-decoration:none;
+
+}
+
+
+
+
+
+/* Colores especiales etiquetas */
+
+
+.camiseta .etiqueta:nth-child(2){
+
+background:#111;
+
+}
+
+
+
+
+
+/* Retro */
+
+#retro .etiqueta{
+
+background:#8b4513;
+
+}
+
+
+
+
+
+/* Selecciones */
+
+#selecciones .etiqueta{
+
+background:#0057b8;
+
+}
+
+
+
+
+
+/* Animación suave */
+
+.camiseta{
+
+animation:entrada .5s ease;
+
+}
+
+
+
+@keyframes entrada{
+
+
+from{
+
+opacity:0;
+transform:translateY(20px);
+
+}
+
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* Separación entre categorías */
+
+#clubes{
+
+padding-top:20px;
+
+}
+
+
+
+
+
+/* Mejor aspecto botones Instagram */
+
+.camiseta button{
+
+min-width:130px;
+
+}
+
+
+
+
+
+/* Ajuste móvil pequeño */
+
+@media(max-width:480px){
+
+
+
+.productos{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.camiseta img{
+
+height:280px;
+
+}
+
+
+
+nav{
+
+gap:10px;
+
+}
+
+
+
+nav a{
+
+font-size:13px;
+
+}
+
+
+
+.presentacion p{
+
+font-size:16px;
+
+}
+
+
+
+h2{
+
+font-size:26px;
+
+}
+
+
+
+.filtros button{
+
+width:90%;
+
+}
+
+
+
+.buscador input{
+
+width:95%;
+
+}
+
+
+
+}
+
+
+
+
+/* Fondo más deportivo */
+
+#lanzamientos,
+#destacados,
+#clubes{
+
+background:#050505;
+
+}
+
+
+
+
+
+
+/* Botón consulta más llamativo */
+
+.camiseta button:hover{
 
 letter-spacing:1px;
 
@@ -169,896 +773,11 @@ letter-spacing:1px;
 
 
 
-/* PRESENTACION */
 
+/* Scroll suave */
 
-.presentacion,
-.bienvenida{
+html{
 
-max-width:900px;
-
-margin:40px auto;
-
-background:linear-gradient(145deg,#151515,#090909);
-
-border-radius:30px;
-
-padding:40px;
-
-border:1px solid #222;
-
-}
-
-
-
-.presentacion p,
-.bienvenida p{
-
-font-size:20px;
-
-color:#ccc;
-
-line-height:1.6;
-
-}
-
-/* DESTACADOS */
-
-
-.destacados-grid{
-
-display:flex;
-
-justify-content:center;
-
-gap:30px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.destacado-card{
-
-background:linear-gradient(145deg,#161616,#080808);
-
-width:300px;
-
-padding:25px;
-
-border-radius:30px;
-
-border:1px solid #333;
-
-transition:.35s;
-
-box-shadow:0 10px 30px rgba(0,0,0,.5);
-
-}
-
-
-
-.destacado-card:hover{
-
-transform:translateY(-12px);
-
-border-color:#00d26a;
-
-}
-
-
-
-.destacado-card img{
-
-width:100%;
-
-height:280px;
-
-object-fit:contain;
-
-display:block;
-
-}
-
-
-
-.destacado-card h3{
-
-font-size:23px;
-
-color:#00d26a;
-
-}
-
-
-
-
-
-
-
-
-
-/* BUSCADOR */
-
-
-.buscador{
-
-max-width:550px;
-
-margin:30px auto;
-
-}
-
-
-
-.buscador input{
-
-width:100%;
-
-padding:18px;
-
-border-radius:40px;
-
-border:none;
-
-font-size:17px;
-
-text-align:center;
-
-background:#111;
-
-color:white;
-
-outline:none;
-
-border:1px solid #333;
-
-}
-
-
-
-.buscador input:focus{
-
-border-color:#00d26a;
-
-}
-
-
-
-
-
-
-
-
-
-/* FILTROS */
-
-
-.filtros{
-
-display:flex;
-
-justify-content:center;
-
-gap:12px;
-
-flex-wrap:wrap;
-
-margin-bottom:40px;
-
-}
-
-
-
-
-
-
-
-
-
-/* PRODUCTOS */
-
-
-.productos{
-
-display:flex;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-gap:30px;
-
-}
-
-
-
-
-
-
-.camiseta{
-
-background:linear-gradient(145deg,#151515,#090909);
-
-width:300px;
-
-padding:25px;
-
-border-radius:30px;
-
-border:1px solid #333;
-
-position:relative;
-
-overflow:hidden;
-
-transition:.35s;
-
-}
-
-
-
-.camiseta:hover{
-
-transform:translateY(-12px);
-
-border-color:#00d26a;
-
-box-shadow:0 15px 35px rgba(0,210,106,.15);
-
-}
-
-
-
-
-
-
-
-.camiseta img{
-
-width:100%;
-
-height:300px;
-
-object-fit:contain;
-
-display:block;
-
-transition:.3s;
-
-}
-
-
-
-
-.camiseta:hover img{
-
-transform:scale(1.05);
-
-}
-
-
-
-
-
-.camiseta h3{
-
-color:#00d26a;
-
-font-size:21px;
-
-}
-
-
-
-.camiseta p{
-
-color:#ccc;
-
-line-height:1.5;
-
-}
-
-
-
-
-
-
-
-strong{
-
-font-size:25px;
-
-}
-
-
-
-
-
-
-
-
-/* ETIQUETAS */
-
-
-.etiqueta{
-
-position:absolute;
-
-top:15px;
-
-left:15px;
-
-background:#00d26a;
-
-color:#000;
-
-padding:7px 12px;
-
-border-radius:20px;
-
-font-size:12px;
-
-font-weight:900;
-
-}
-
-
-
-
-
-
-
-/* LIGAS */
-
-
-.liga{
-
-font-size:32px;
-
-color:#00d26a;
-
-margin-top:55px;
-
-}
-
-/* BOTONES */
-
-
-button{
-
-background:#00d26a;
-
-color:#000;
-
-border:none;
-
-padding:15px 32px;
-
-border-radius:30px;
-
-font-weight:900;
-
-font-size:15px;
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-
-
-button:hover{
-
-background:white;
-
-transform:scale(1.05);
-
-}
-
-
-
-
-
-
-
-
-
-/* COLECCIONES */
-
-
-.colecciones-grid{
-
-display:flex;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-gap:20px;
-
-}
-
-
-
-.coleccion{
-
-background:#111;
-
-border:1px solid #333;
-
-padding:30px;
-
-width:230px;
-
-border-radius:25px;
-
-font-size:20px;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-
-
-.coleccion:hover{
-
-background:#00d26a;
-
-color:#000;
-
-transform:scale(1.05);
-
-}
-
-
-
-
-
-
-
-
-
-/* BLOQUES */
-
-.bloque{
-
-background:linear-gradient(145deg,#151515,#090909);
-
-max-width:1000px;
-
-margin:60px auto;
-
-border-radius:35px;
-
-padding:45px;
-
-border:1px solid #222;
-
-}
-
-
-
-
-
-
-
-
-
-/* QUIENES SOMOS */
-
-
-.quienes{
-
-background:linear-gradient(145deg,#151515,#090909);
-
-max-width:900px;
-
-margin:50px auto;
-
-padding:40px;
-
-border-radius:30px;
-
-border:1px solid #222;
-
-}
-
-
-
-.quienes h2{
-
-color:#00d26a;
-
-font-size:38px;
-
-}
-
-
-
-.quienes p{
-
-font-size:18px;
-
-line-height:1.6;
-
-color:#ddd;
-
-}
-
-
-
-
-
-
-
-
-/* CONFIANZA */
-
-
-.confianza{
-
-background:#111;
-
-padding:50px 20px;
-
-margin-top:50px;
-
-}
-
-
-
-.confianza p{
-
-font-size:21px;
-
-color:#ccc;
-
-}
-
-
-
-
-
-
-
-
-
-/* FOOTER */
-
-
-footer{
-
-padding:40px;
-
-color:#777;
-
-font-size:18px;
-
-}
-
-/* CELULAR */
-
-
-@media(max-width:700px){
-
-
-
-.logo{
-
-font-size:28px;
-
-letter-spacing:2px;
-
-}
-
-
-
-
-
-header{
-
-padding:18px 10px;
-
-}
-
-
-
-
-nav{
-
-margin-top:15px;
-
-}
-
-
-
-nav a{
-
-display:inline-block;
-
-font-size:12px;
-
-margin:5px;
-
-}
-
-
-
-
-
-
-.hero img{
-
-max-height:300px;
-
-}
-
-
-
-
-
-
-section{
-
-padding:30px 12px;
-
-}
-
-
-
-
-
-section h2{
-
-font-size:28px;
-
-}
-
-
-
-
-
-
-
-
-
-.presentacion,
-.bienvenida,
-.quienes{
-
-padding:25px 15px;
-
-margin:30px 10px;
-
-}
-
-
-
-.presentacion p,
-.bienvenida p{
-
-font-size:16px;
-
-}
-
-
-
-
-
-
-
-/* DESTACADOS MOVIL */
-
-
-.destacados-grid{
-
-gap:12px;
-
-}
-
-
-
-
-.destacado-card{
-
-width:160px;
-
-padding:12px;
-
-border-radius:20px;
-
-}
-
-
-
-.destacado-card img{
-
-height:150px;
-
-}
-
-
-
-.destacado-card h3{
-
-font-size:14px;
-
-}
-
-
-
-
-
-
-
-
-
-/* PRODUCTOS MOVIL */
-
-
-.productos{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:12px;
-
-align-items:start;
-
-}
-
-
-
-
-
-
-.camiseta{
-
-width:auto;
-
-padding:12px;
-
-border-radius:20px;
-
-}
-
-
-
-
-.camiseta img{
-
-height:160px;
-
-object-fit:contain;
-
-}
-
-
-
-
-.camiseta h3{
-
-font-size:14px;
-
-line-height:1.3;
-
-}
-
-
-
-
-
-.camiseta p{
-
-font-size:12px;
-
-line-height:1.4;
-
-}
-
-
-
-
-
-strong{
-
-font-size:18px;
-
-}
-
-
-
-
-
-
-
-.etiqueta{
-
-font-size:9px;
-
-padding:5px 8px;
-
-top:8px;
-
-left:8px;
-
-}
-
-
-
-
-
-
-
-button{
-
-width:100%;
-
-padding:11px 8px;
-
-font-size:12px;
-
-}
-
-
-
-
-
-
-
-.liga{
-
-font-size:24px;
-
-margin-top:35px;
-
-}
-
-
-
-
-
-
-
-.bloque{
-
-padding:25px 15px;
-
-margin:35px 10px;
-
-}
-
-
-
-
-
-
-.confianza p{
-
-font-size:16px;
-
-}
-
-
-
-
-
-
-
-footer{
-
-padding:30px 15px;
-
-font-size:15px;
-
-}
-
-
+scroll-behavior:smooth;
 
 }
