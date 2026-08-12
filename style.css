@@ -927,3 +927,134 @@ grid-template-columns:1fr;
 text-decoration:none;
 
 }
+.menu-ligas{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:40px;
+
+}
+
+
+.menu-ligas a{
+
+text-decoration:none;
+
+}
+
+
+.liga-card{
+
+background:#111;
+color:white;
+width:180px;
+height:120px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+
+border-radius:15px;
+
+font-size:22px;
+
+font-weight:bold;
+
+transition:0.3s;
+
+}
+
+
+.liga-card:hover{
+
+transform:scale(1.05);
+
+background:#1db954;
+
+}
+.portada-ligas{
+
+text-align:center;
+padding:40px 20px;
+
+}
+
+
+.portada-ligas img{
+
+width:100%;
+max-width:1000px;
+height:300px;
+object-fit:cover;
+border-radius:20px;
+
+}
+
+
+.portada-ligas h1{
+
+font-size:40px;
+margin-top:30px;
+
+}
+
+
+.portada-ligas p{
+
+font-size:20px;
+color:#555;
+
+}
+.portada-liga img{
+
+width:90%;
+max-width:1000px;
+height:300px;
+object-fit:cover;
+border-radius:20px;
+display:block;
+margin:auto;
+
+}
+.portada-liga{
+
+text-align:center;
+padding:20px;
+margin:25px auto;
+max-width:1100px;
+
+}
+
+
+.portada-liga img{
+
+width:100%;
+max-width:1000px;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+display:block;
+margin:auto;
+
+}
+
+
+.portada-liga h1{
+
+font-size:38px;
+margin:20px 0 10px;
+text-align:center;
+
+}
+
+
+.portada-liga p{
+
+font-size:18px;
+margin:8px 0;
+text-align:center;
+
+}
