@@ -781,3 +781,149 @@ html{
 scroll-behavior:smooth;
 
 }
+/* =====================
+   COMO COMPRAR
+===================== */
+
+
+.como-comprar{
+
+background:#0b0b0b;
+padding:50px 20px;
+text-align:center;
+
+}
+
+
+.como-comprar h2{
+
+color:white;
+font-size:32px;
+margin-bottom:35px;
+
+}
+
+
+
+.pasos{
+
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+max-width:1300px;
+margin:auto;
+
+}
+
+
+
+.paso{
+
+background:#111;
+border:1px solid #222;
+border-radius:15px;
+padding:25px;
+transition:.3s;
+
+}
+
+
+
+.paso:hover{
+
+transform:translateY(-8px);
+box-shadow:0 0 25px #00ff66;
+border-color:#00ff66;
+
+}
+
+
+
+.paso span{
+
+font-size:35px;
+
+}
+
+
+
+.paso h3{
+
+color:#00ff66;
+margin:15px 0;
+
+}
+
+
+
+.paso p{
+
+color:white;
+line-height:1.6;
+
+}
+
+
+
+.paso.destacado{
+
+border:2px solid #00ff66;
+
+}
+
+
+
+.boton-instagram{
+
+display:block;
+margin:35px auto 0;
+background:#00ff66;
+color:black;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+text-decoration:none;
+
+}
+
+.boton-instagram:hover{
+
+text-decoration:none;
+
+}
+
+
+
+.boton-instagram:hover{
+
+transform:scale(1.05);
+
+}
+@media(max-width:900px){
+
+.pasos{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:500px){
+
+.pasos{
+
+grid-template-columns:1fr;
+
+}
+
+}
+.como-comprar a{
+
+text-decoration:none;
+
+}
