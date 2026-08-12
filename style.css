@@ -1058,3 +1058,16 @@ margin:8px 0;
 text-align:center;
 
 }
+.portada-liga img {
+
+width: 100%;
+max-width: 900px;
+height: 300px;
+object-fit: cover;
+object-position: center;
+border-radius: 15px;
+
+}
+.banner-premier {
+object-position: center bottom;
+}
