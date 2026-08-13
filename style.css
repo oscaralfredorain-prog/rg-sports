@@ -947,32 +947,46 @@ text-decoration:none;
 
 .liga-card{
 
-background:#111;
+background:linear-gradient(145deg,#1a1a1a,#050505);
+
 color:white;
-width:180px;
-height:120px;
+
+width:220px;
+
+height:150px;
 
 display:flex;
+
 align-items:center;
+
 justify-content:center;
+
 flex-direction:column;
 
-border-radius:15px;
+border-radius:20px;
 
-font-size:22px;
+font-size:24px;
 
-font-weight:bold;
+font-weight:900;
 
-transition:0.3s;
+letter-spacing:1px;
+
+border:1px solid #222;
+
+box-shadow:0 8px 20px rgba(0,0,0,.5);
+
+transition:.3s;
 
 }
 
 
 .liga-card:hover{
 
-transform:scale(1.05);
+transform:translateY(-8px);
 
-background:#1db954;
+background:#00a651;
+
+box-shadow:0 0 25px #00ff66;
 
 }
 .portada-ligas{
@@ -1058,16 +1072,209 @@ margin:8px 0;
 text-align:center;
 
 }
-.portada-liga img {
 
-width: 100%;
-max-width: 900px;
-height: 300px;
-object-fit: cover;
-object-position: center;
-border-radius: 15px;
-
-}
 .banner-premier {
 object-position: center bottom;
+}
+/* ==========================
+   BANNERS DE LIGAS
+========================== */
+
+
+.portada-liga{
+
+text-align:center;
+
+padding:20px;
+
+margin:25px auto;
+
+max-width:1100px;
+
+}
+
+
+
+.portada-liga img{
+
+width:100%;
+
+max-width:900px;
+
+height:220px;
+
+object-fit:contain;
+
+border-radius:20px;
+
+display:block;
+
+margin:auto;
+
+}
+
+
+
+.portada-liga h1{
+
+font-size:38px;
+
+margin:20px 0 10px;
+
+text-align:center;
+
+}
+
+
+
+.portada-liga p{
+
+font-size:18px;
+
+margin:8px 0;
+
+text-align:center;
+
+}
+
+
+
+/* Ajuste banner Premier */
+
+.banner-premier{
+
+object-position:center bottom;
+
+}
+
+
+
+/* Fondo especial Liga Chilena */
+
+.portada-chile{
+
+background:linear-gradient(180deg,#0039a6,#050505);
+
+border-radius:20px;
+
+padding:30px 20px;
+
+}
+
+
+
+/* Imagen transparente Chile */
+
+.portada-chile img{
+
+object-fit:cover;
+
+height:260px;
+
+}
+/* Portada menú ligas */
+
+.portada-ligas h1{
+
+color:#00ff66;
+
+font-size:42px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+}
+
+
+.portada-ligas p{
+
+color:white;
+
+font-size:20px;
+
+}
+/* =========================
+   SELECTOR DE LIGAS
+========================= */
+
+
+.selector-ligas{
+
+background:linear-gradient(180deg,#111,#050505);
+
+padding:25px 15px;
+
+text-align:center;
+
+margin:20px auto;
+
+max-width:1200px;
+
+border-radius:20px;
+
+border:1px solid #222;
+
+box-shadow:0 5px 20px rgba(0,0,0,.5);
+
+}
+
+
+
+.selector-ligas h3{
+
+color:#00ff66;
+
+font-size:24px;
+
+margin-bottom:20px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+}
+
+
+
+.selector-ligas a{
+
+display:inline-block;
+
+background:#181818;
+
+color:white;
+
+text-decoration:none;
+
+padding:12px 20px;
+
+margin:5px;
+
+border-radius:30px;
+
+font-size:16px;
+
+font-weight:bold;
+
+border:1px solid #333;
+
+transition:.3s;
+
+}
+
+
+
+.selector-ligas a:hover{
+
+background:#00a651;
+
+border-color:#00ff66;
+
+transform:translateY(-4px);
+
+box-shadow:0 0 15px #00ff66;
+
 }
