@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+RG Sports - Buscar
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+RG SPORTS ⚽
+</div>
+
+
+<nav>
+
+<a href="index.html">
+Inicio
+</a>
+
+<a href="ligas.html">
+Ligas
+</a>
+
+<a href="selecciones.html">
+Selecciones
+</a>
+
+<a href="retro.html">
+Retro
+</a>
+
+<a href="como-comprar.html">
+Cómo comprar
+</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="busqueda-pagina">
+
+
+<h1>
+🔎 Buscar camiseta
+</h1>
+
+
+<input 
+type="text"
+id="busqueda"
+placeholder="Escribe tu equipo..."
+>
+
+
+<div id="resultados">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<script>
+
+
+const camisetas = [
+
+
+{
+nombre:"Real Madrid",
+liga:"LaLiga",
+pagina:"laliga.html"
+},
+
+
+{
+nombre:"FC Barcelona",
+liga:"LaLiga",
+pagina:"laliga.html"
+},
+
+
+{
+nombre:"Atlético de Madrid",
+liga:"LaLiga",
+pagina:"laliga.html"
+},
+
+
+{
+nombre:"Manchester City",
+liga:"Premier League",
+pagina:"premier.html"
+},
+
+
+{
+nombre:"Arsenal FC",
+liga:"Premier League",
+pagina:"premier.html"
+},
+
+
+{
+nombre:"Chelsea FC",
+liga:"Premier League",
+pagina:"premier.html"
+},
+
+
+{
+nombre:"Liverpool FC",
+liga:"Premier League",
+pagina:"premier.html"
+},
+
+
+{
+nombre:"Inter de Milán",
+liga:"Serie A",
+pagina:"seriea.html"
+},
+
+
+{
+nombre:"AC Milan",
+liga:"Serie A",
+pagina:"seriea.html"
+},
+
+
+{
+nombre:"Bayern Munich",
+liga:"Bundesliga",
+pagina:"bundesliga.html"
+},
+
+
+{
+nombre:"Paris Saint-Germain",
+liga:"Ligue 1",
+pagina:"ligue1.html"
+},
+
+
+{
+nombre:"Colo-Colo",
+liga:"Liga Chilena",
+pagina:"chilena.html"
+},
+
+
+{
+nombre:"Universidad de Chile",
+liga:"Liga Chilena",
+pagina:"chilena.html"
+},
+
+
+{
+nombre:"Universidad Católica",
+liga:"Liga Chilena",
+pagina:"chilena.html"
+}
+
+
+];
+
+
+
+
+
+const input = document.getElementById("busqueda");
+
+const resultados = document.getElementById("resultados");
+
+
+
+let parametros = new URLSearchParams(window.location.search);
+
+let textoInicial = parametros.get("buscar");
+
+
+
+if(textoInicial){
+
+input.value = textoInicial;
+
+buscar(textoInicial);
+
+}
+
+
+
+
+input.addEventListener("keyup",function(){
+
+
+buscar(input.value);
+
+
+});
+
+
+
+
+
+function buscar(texto){
+
+
+resultados.innerHTML="";
+
+
+texto = texto.toLowerCase();
+
+
+
+if(texto===""){
+
+return;
+
+}
+
+
+
+let encontrados = camisetas.filter(function(item){
+
+
+return item.nombre.toLowerCase().includes(texto);
+
+
+});
+
+
+
+if(encontrados.length===0){
+
+
+resultados.innerHTML=
+"<p>No encontramos esa camiseta 😕</p>";
+
+
+return;
+
+}
+
+
+
+
+encontrados.forEach(function(item){
+
+
+resultados.innerHTML += `
+
+
+<div class="resultado">
+
+
+<h2>
+${item.nombre}
+</h2>
+
+
+<p>
+⭐ ${item.liga}
+</p>
+
+
+<a href="${item.pagina}">
+
+<button>
+VER CAMISETA
+</button>
+
+</a>
+
+
+</div>
+
+
+`;
+
+
+});
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
