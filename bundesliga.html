@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+RG Sports - Bundesliga
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+RG SPORTS ⚽
+</div>
+
+<nav>
+
+<a href="index.html">Inicio</a>
+
+<a href="ligas.html">Ligas</a>
+
+<a href="selecciones.html">Selecciones</a>
+
+<a href="retro.html">Retro</a>
+
+<a href="como-comprar.html">Cómo comprar</a>
+
+</nav>
+
+</header>
+<div class="selector-ligas">
+
+<h3>
+⚽ Cambiar liga
+</h3>
+
+
+<a href="laliga.html">
+🇪🇸 LaLiga
+</a>
+
+<a href="premier.html">
+🇬🇧 Premier League
+</a>
+
+<a href="seriea.html">
+🇮🇹 Serie A
+</a>
+
+<a href="bundesliga.html">
+🇩🇪 Bundesliga
+</a>
+
+<a href="ligue1.html">
+🇫🇷 Ligue 1
+</a>
+
+<a href="chilena.html">
+🇨🇱 Liga Chilena
+</a>
+
+</div>
+
+<section class="portada-liga">
+
+<img src="imagenes/bundesliga-banner.jpg" alt="Bundesliga RG Sports">
+
+<h1>
+🇩🇪 Bundesliga Temporada 26/27
+</h1>
+
+<p>
+Camisetas de los clubes alemanes disponibles.
+</p>
+
+<p>
+⚽ Selecciona tu equipo favorito.
+</p>
+
+</section>
+
+<section class="bloque">
+
+<h2>
+🇩🇪 Bundesliga 26/27
+</h2>
+
+<div class="buscador">
+
+<input
+type="text"
+id="buscar"
+placeholder="🔎 Buscar camiseta...">
+
+</div>
+
+<div class="productos">
+
+<div class="camiseta producto">
+
+<img src="imagenes/bayern.png" loading="lazy">
+
+<span class="etiqueta">
+LOCAL
+</span>
+
+<h3>
+Bayern Munich
+<br>
+Primera Equipación 26/27
+</h3>
+
+<p>
+⭐ Bundesliga
+<br>
+👕 Manga corta
+<br>
+📏 S - M - L - XL - XXL
+</p>
+
+<strong>
+$21.990
+</strong>
+
+<a href="https://www.instagram.com/RG_SPORTS__/">
+
+<button>
+Consultar
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const buscador=document.getElementById("buscar");
+
+if(buscador){
+
+buscador.addEventListener("keyup",function(){
+
+let texto=buscador.value.toLowerCase();
+
+let productos=document.querySelectorAll(".producto");
+
+productos.forEach(function(producto){
+
+let contenido=producto.innerText.toLowerCase();
+
+producto.style.display=contenido.includes(texto)?"block":"none";
+
+});
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
